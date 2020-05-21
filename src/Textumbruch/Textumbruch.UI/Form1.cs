@@ -16,5 +16,9 @@ namespace Textumbruch.UI
         {
             InitializeComponent();
         }
+
+        private void btn_Umbrechen_Click(object sender, EventArgs e)
+        {
+        }
     }
 }
