@@ -43,8 +43,10 @@ namespace Textumbruch.Logik
 
             konfiguration
                 .Text
-                .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries).ToList()
+                .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
+                .ToList()
                 .ForEach(wort => wörter.Enqueue(wort));
+            
             return wörter;
         }
     }
