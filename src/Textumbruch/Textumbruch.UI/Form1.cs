@@ -15,7 +15,7 @@ namespace Textumbruch.UI
         private void btn_Umbrechen_Click(object sender, EventArgs e)
         {
             var eingabe = ErmittleEingabe();
-            var zeilen = Umbrechen(eingabe);
+            var zeilen = new Logik().Umbrechen(eingabe);
             Ausgeben(zeilen);
         }
 
@@ -27,15 +27,10 @@ namespace Textumbruch.UI
                 ctrl_Ausgabe.AppendText(Environment.NewLine + zeile);
         }
 
-        private IEnumerable<string> Umbrechen(Tuple<string, int> eingabe)
-        {
-            return eingabe.Item1.Split(new[] {' '}, StringSplitOptions.None);
-        }
-
-        private Tuple<string, int> ErmittleEingabe()
+        private TextumbruchKonfiguration ErmittleEingabe()
         {
             int.TryParse(ctrl_BreiteInZeichen.Text, out var breite);
-            return new Tuple<string, int>(ctrl_Eingabe.Text, breite);
+            return new TextumbruchKonfiguration(breite, ctrl_Eingabe.Text);
         }
     }
 }
