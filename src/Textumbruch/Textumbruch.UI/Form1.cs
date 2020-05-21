@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Windows.Forms;
+using Textumbruch.Contracts;
+using Textumbruch.Logik;
 
 namespace Textumbruch.UI
 {

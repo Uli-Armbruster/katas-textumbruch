@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Textumbruch.Contracts;
 
-namespace Textumbruch.UI
+namespace Textumbruch.Logik
 {
     public class UmbruchOhneSilbentrennung
     {
@@ -25,7 +26,7 @@ namespace Textumbruch.UI
                 {
                     if (zeile.Length > 0)
                         yield return zeile.ToString().Trim();
-                    
+
                     zeile.Clear();
                 }
 
@@ -42,8 +43,7 @@ namespace Textumbruch.UI
 
             konfiguration
                 .Text
-                .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries)
-                .ToList()
+                .Split(new[] {' '}, StringSplitOptions.RemoveEmptyEntries).ToList()
                 .ForEach(wort => wörter.Enqueue(wort));
             return wörter;
         }

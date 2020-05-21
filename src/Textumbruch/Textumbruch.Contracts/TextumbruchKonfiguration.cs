@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Textumbruch.UI
+namespace Textumbruch.Contracts
 {
     public class TextumbruchKonfiguration
     {

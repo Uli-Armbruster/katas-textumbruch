@@ -1,8 +1,9 @@
 ﻿using System.Linq;
 using FluentAssertions;
+using Textumbruch.Contracts;
 using Xunit;
 
-namespace Textumbruch.UI
+namespace Textumbruch.Logik
 {
     public class UmbruchOhneSilbentrennungSpecs
     {

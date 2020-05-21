@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textumbruch.UI", "Textumbruch.UI\Textumbruch.UI.csproj", "{C43E70F2-4BE3-408D-B7CC-157C8C6EBDCD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textumbruch.Logik", "Textumbruch.Logik\Textumbruch.Logik.csproj", "{79DC9698-A5AF-4648-B78F-6770E59F5D7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Textumbruch.Contracts", "Textumbruch.Contracts\Textumbruch.Contracts.csproj", "{9B46F2C1-DC6E-4007-AC18-8AE6B10B22E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C43E70F2-4BE3-408D-B7CC-157C8C6EBDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C43E70F2-4BE3-408D-B7CC-157C8C6EBDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C43E70F2-4BE3-408D-B7CC-157C8C6EBDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79DC9698-A5AF-4648-B78F-6770E59F5D7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79DC9698-A5AF-4648-B78F-6770E59F5D7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79DC9698-A5AF-4648-B78F-6770E59F5D7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79DC9698-A5AF-4648-B78F-6770E59F5D7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B46F2C1-DC6E-4007-AC18-8AE6B10B22E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B46F2C1-DC6E-4007-AC18-8AE6B10B22E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B46F2C1-DC6E-4007-AC18-8AE6B10B22E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B46F2C1-DC6E-4007-AC18-8AE6B10B22E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
