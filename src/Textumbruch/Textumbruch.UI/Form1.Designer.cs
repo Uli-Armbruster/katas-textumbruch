@@ -52,14 +52,18 @@
             // 
             // ctrl_Eingabe
             // 
+            this.ctrl_Eingabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctrl_Eingabe.Location = new System.Drawing.Point(12, 48);
             this.ctrl_Eingabe.Multiline = true;
             this.ctrl_Eingabe.Name = "ctrl_Eingabe";
             this.ctrl_Eingabe.Size = new System.Drawing.Size(978, 213);
             this.ctrl_Eingabe.TabIndex = 1;
+            this.ctrl_Eingabe.Text = "Vor einem großen Walde wohnte ein armer Holzhacker mit seiner Frau und seinen zwe" +
+    "i Kindern; das Bübchen hieß Hänsel und das Mädchen Gretel.";
             // 
             // ctrl_Ausgabe
             // 
+            this.ctrl_Ausgabe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ctrl_Ausgabe.Location = new System.Drawing.Point(12, 325);
             this.ctrl_Ausgabe.Multiline = true;
             this.ctrl_Ausgabe.Name = "ctrl_Ausgabe";
@@ -94,6 +98,7 @@
             this.ctrl_BreiteInZeichen.Name = "ctrl_BreiteInZeichen";
             this.ctrl_BreiteInZeichen.Size = new System.Drawing.Size(365, 41);
             this.ctrl_BreiteInZeichen.TabIndex = 1;
+            this.ctrl_BreiteInZeichen.Text = "25";
             // 
             // label2
             // 
