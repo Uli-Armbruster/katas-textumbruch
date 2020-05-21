@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Windows.Forms;
 
 namespace Textumbruch.UI
@@ -15,16 +14,16 @@ namespace Textumbruch.UI
         private void btn_Umbrechen_Click(object sender, EventArgs e)
         {
             var eingabe = ErmittleEingabe();
-            var zeilen = new Logik().Umbrechen(eingabe);
+            var zeilen = new UmbruchOhneSilbentrennung().Umbrechen(eingabe);
             Ausgeben(zeilen);
         }
 
         private void Ausgeben(IEnumerable<string> zeilen)
         {
-            ctrl_Ausgabe.AppendText(zeilen.First());
+            ctrl_Ausgabe.Clear();
 
-            foreach (var zeile in zeilen.Skip(1))
-                ctrl_Ausgabe.AppendText(Environment.NewLine + zeile);
+            foreach (var zeile in zeilen) 
+                ctrl_Ausgabe.AppendText($"{zeile}{Environment.NewLine}");
         }
 
         private TextumbruchKonfiguration ErmittleEingabe()
